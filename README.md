@@ -12,9 +12,13 @@
 Создать файл .env с ключами:
 
 env
+
 Копировать код
+
 TELEGRAM_BOT_TOKEN=ваш_телеграм_токен
 OPENAI_API_KEY=ваш_openai_api_key
+
+
 Запустить:
 
 bash
