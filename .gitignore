@@ -1,0 +1,9 @@
+# токены и конфиги
+.env
+
+# служебное от Docker
+__pycache__/
+*.pyc
+
+# служебное от VS Code
+.vscode/
