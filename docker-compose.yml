@@ -1,6 +1,6 @@
 volumes:
   bot_log_share: {}
-  loki_stora_data: {}
+  loki_storage_data: {}
   logs_volume: {}
 
 services:
