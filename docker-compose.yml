@@ -20,8 +20,12 @@ services:
     image: grafana/grafana:10.2.0
     ports:
       - "3000:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/etc/grafana/dashboards
     depends_on:
       - loki-local
+
 
   promtail:
     image: grafana/promtail:2.9.3
