@@ -7,3 +7,6 @@ __pycache__/
 
 # служебное от VS Code
 .vscode/
+
+#Логи
+logs/

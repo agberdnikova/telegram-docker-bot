@@ -1,5 +1,6 @@
 clients:
   - url: http://loki-local:3100/loki/api/v1/push
+    tenant_id: fake
 
 scrape_configs:
   - job_name: telegram-bot

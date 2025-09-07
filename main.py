@@ -29,6 +29,7 @@ from openai import OpenAI  # [ADDED]
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])  # [спрятала ключик, чатджипити настоял]
 
 # Enable logging
+os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     format='timestamp=%(asctime)s logger=%(name)s level=%(levelname)s msg="%(message)s"',
     datefmt='%Y-%m-%dT%H:%M:%S',
@@ -38,6 +39,7 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
+
 # set higher logging level for httpx to avoid all GET and POST requests being logged
 logging.getLogger("httpx").setLevel(logging.WARNING)
 

@@ -10,7 +10,7 @@ services:
     env_file: .env
 
     volumes:
-      - bot_log_share:/app/logs
+      - logs_volume:/app/logs    # <-- тот же volume, что у promtail
 
         # http://loki-local:3100
   loki-local:
